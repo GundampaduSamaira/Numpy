@@ -1,0 +1,70 @@
+NumPy (Numerical Python) is an open source Python library that’s widely used in science and engineering. 
+The NumPy library contains multidimensional array data structures, such as the homogeneous, N-dimensional ndarray, 
+and a large library of functions that operate efficiently on these data structures. 
+
+Difference Between Pandas and Numpy
+Pandas:
+  Purpose: Data Analysis and Data Manipulation
+  Main DataStructures are: Series(1D) and DataFrame(2D)
+  Type of Data: Works with Numbers, Text, Dates, Categories, etc.,
+  Best Used for: Data cleaning, filtering, grouping, merging, handling tabular data
+  Speed: Slightly slower (built on top of Numpy)
+  Missing Values Handling: Strong support (NaN Handling)
+  indexing: Label-based + Position-based
+  File Handling: can read and write CSV, EXCEL, SQL, JSON
+
+Numpy: 
+  Purpose: Numerical Computing
+  Main DataStructures are: ndarray(multi-dimensional array)
+  Type of Data: Best works with numbers only
+  Best Used for: Mathematical operations, linear algebra, arrays, matrices
+  Speed: Very fast for numerical operations
+  Missing Values Handling: Weak support
+  indexing: Position-based
+  File Handling: No direct support for CSV, Excel
+
+--> Numpy is designed using c, c++ and python
+
+Numpy Vs Python
+
+Python
+
+--> A general-purpose programming language.
+--> Can build anything: apps, websites, games, automation, AI, etc.
+--> Comes with built-in data types like lists, tuples, dictionaries.
+--> Slower for numerical calculations.
+--> Not optimized for working with large datasets or performing heavy math.
+
+Numpy
+
+--> A Python library (not a language).
+--> Specially designed for fast numerical computation.
+--> Provides the ndarray, which is much faster than Python lists.
+--> Supports vectorized operations, linear algebra, matrices, random numbers, etc.
+--> Backbone of libraries like Pandas, TensorFlow, Scikit-learn.
+
+Why numpy array are Faster
+1. Numpy array store the elements in continuous memory location.
+2. Numpy array approximately 50x faster then the python list
+3. Numpy array are good at working with multiprocessors
+
+Python List Vs Numpy Array
+
+1. Data Type
+  NumPy Array:
+      All elements must be of the same data type (int, float, etc.) → homogeneous
+  Python List:
+      Can store different data types in the same list → heterogeneous
+2. Speed
+  NumPy Arrays: Very fast (written in C, optimized).
+  Python Lists: Slower for numerical operations.
+3. Memory Usage
+  NumPy Arrays: Use less memory.
+  Python Lists: Use more memory.
+4. Mathematical Operations
+  NumPy Array: Supports vectorized operations (element-wise math directly).
+  Python List: Must use loops.
+5. Multi-Dimensional Support
+  NumPy Array: Supports 2D, 3D, ND arrays (matrix, tensor).
+  Python List:
+      2D lists are possible but complicated and slower.
